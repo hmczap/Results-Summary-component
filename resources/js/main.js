@@ -3,3 +3,7 @@
 
 let main = document.getElementById("main");
 
+// get handle to the results list
+//read in results from data.json (using the parse() method)
+// for each list element in the results list, insert the score result and icon
+//  into the innerhtml / innertext of the list element

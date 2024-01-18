@@ -15,6 +15,7 @@
 
     --violet-blue: hsla(256, 72%, 46%, 1);
     --persian-blue: hsla(241, 72%, 46%, 0);
+    --persian-blue-full: hsl(241, 72%, 46%);
 }
 
 * {
@@ -23,7 +24,174 @@
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+
+}
+
 /* Content Styles */
+
+.results-card {
+    width: calc(0.45*1440px);
+    justify-self: center;
+    display: flex;
+    box-shadow: 5px 5px 10px var(--pale-blue);
+    border-radius: 30px;
+}
+
+.results-overview {
+    width: 50%;
+    color: var(--white);
+    background: linear-gradient(var(--light-slate-blue) 0%, var(--light-royal-blue) 70%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.results-card .results-overview h1, .results-card .results-overview p.subtitle {
+    color: var(--light-lavender);
+    opacity: 75%;
+}
+
+.results-card .results-overview h1 {
+    margin: 5px 0px 25px 0px;
+}
+
+.results-card .results-overview h3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.results-overview p.subtitle {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.user-result-total {
+    border-radius: 120px;
+    padding: 40px 60px;
+    background: linear-gradient(var(--violet-blue) 0%, var(--persian-blue) 95%);
+}
+
+.user-result-total p {
+    font-size: 18px;
+    color: var(--light-lavender);
+    opacity: 60%;
+    text-align: center;
+}
+
+.user-result-total h2 {
+    font-weight: 800;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.results-summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    background: transparent;
+    color: var(--dark-gray-blue);
+}
+
+.results-summary h4 {
+    width: 100%;
+    align-self: flex-start;
+    font-size: 18px;
+}
+
+.results-summary ul {
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+
+.results-summary li {
+    width: 100%;
+    border-radius: 7px; 
+    display: inline-block;
+    padding: 12px 12px;
+    margin: 5px 0px;
+}
+
+.results-summary li h5 {
+    font-size: 16px;
+    font-weight: 500;
+    float: left;
+    display: inline;
+}
+
+.results-summary li p {
+    float: right;
+    display: inline;
+    color: hsla(224, 30%, 27%, 50%);
+}
+
+.results-summary li p strong {
+    margin: 0px 5px;
+    color: var(--dark-gray-blue);
+}
+
+.results-summary ul.results-list li.reaction {
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+.results-summary ul.results-list li.reaction h5 {
+    color: var(--light-red);
+}
+
+.results-summary ul.results-list li.memory {
+    background: hsla(39, 100%, 56%, 0.1);
+}
+
+.results-summary ul.results-list li.memory h5 {
+    color: var(--orangey-yellow);
+}
+
+.results-summary ul.results-list li.verbal {
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+.results-summary ul.results-list li.verbal h5 {
+    color: var(--green-teal);
+}
+
+.results-summary ul.results-list li.visual {
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+.results-summary ul.results-list li.visual h5 {
+    color: var(--cobalt-blue);
+}
+    
+.results-summary button {
+    width: 100%;
+    background-color: var(--dark-gray-blue);
+    border-radius: 50px;
+    padding: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.results-summary button p {
+    color: var(--white);
+}
+
+.results-summary button:hover {
+    background-color: red;
+}
 
 .attribution { 
     font-size: 11px; 

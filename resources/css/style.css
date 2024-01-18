@@ -41,7 +41,7 @@ body {
     width: calc(0.45*1440px);
     justify-self: center;
     display: flex;
-    box-shadow: 5px 5px 10px var(--pale-blue);
+    box-shadow: 5px 5px 15px var(--pale-blue);
     border-radius: 30px;
 }
 
@@ -69,6 +69,7 @@ body {
 .results-card .results-overview h3 {
     font-weight: 700;
     font-size: 25px;
+    padding: 10px 0px;
 }
 
 .results-overview p.subtitle {
@@ -127,6 +128,12 @@ body {
     margin: 5px 0px;
 }
 
+.results-summary li .results-icon {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+
 .results-summary li h5 {
     font-size: 16px;
     font-weight: 500;
@@ -179,18 +186,23 @@ body {
     
 .results-summary button {
     width: 100%;
+    margin-top: 15px;
     background-color: var(--dark-gray-blue);
     border-radius: 50px;
-    padding: 10px;
-    transition: background-color 0.2s ease-in-out;
+    padding: 15px;
+    transition: background-color 0.2s;
+    backface-visibility: hidden;
+    border: none;
 }
 
 .results-summary button p {
     color: var(--white);
+    backface-visibility: hidden;
 }
 
 .results-summary button:hover {
-    background-color: red;
+    background: var(--light-royal-blue) 70%;
+    backface-visibility: hidden;
 }
 
 .attribution { 

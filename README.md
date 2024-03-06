@@ -23,9 +23,9 @@ to be added to the list without needing to modify the HTML document
 
 ### Screenshot
 
-![](./images/solution-desktop.png)
+![](./resources/images/solution-desktop.png)
 
-![](./images/solution-mobile.png)
+![](./resources/images/solution-mobile.png)
 
 ### Links
 

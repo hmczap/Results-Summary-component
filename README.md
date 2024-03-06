@@ -23,7 +23,7 @@ to be added to the list without needing to modify the HTML document
 
 ### Screenshot
 
-![](./resources/images/solution-desktop.png)
+
 
 ![](./resources/images/solution-mobile.png)
 
